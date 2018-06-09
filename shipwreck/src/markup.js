@@ -88,7 +88,7 @@ const markup = {
     switch (field.type) {
       case 'hidden':
         let extraAttributes = '';
-        if (field.type.toLower() === 'number') {
+        if (field.type.toLowerCase() === 'number') {
           extraAttributes = 'step="any"';
         }
         return `<input type="${field.type}" value="${field.value}" name="${field.name}" ${extraAttributes}>`;
