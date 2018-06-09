@@ -1,0 +1,204 @@
+@import 'colours.css';
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  color: var(--ink-base);
+  padding-bottom: 200px;
+}
+
+label {
+  color: var(--ink-lighter);
+  font-weight: bold;
+  font-size: .9em;
+}
+
+.main-form {
+  padding: 10px;
+  border-bottom: 1px solid var(--sky-base);
+  background-color: var(--sky-light);
+}
+
+.card {
+  background-color: var(--white-base);
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2);
+}
+
+.card h1 { font-size: 1.2em; }
+.card h2 { font-size: 1.1em; }
+.card h3 { font-size: 1.0em; }
+
+.divider {
+  color: #ddd;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* Shipwreck */
+
+.shipwreck {
+}
+
+.shipwreck .current-path {
+  margin: 10px;
+}
+
+.shipwreck .current-path a {
+  display: inline-block;
+  padding: 10px 0px;
+}
+
+.shipwreck .flex-parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shipwreck .flex-1 {
+  flex: 1;
+  max-width: 800px
+}
+
+.shipwreck .flex-2 {
+  flex: 2;
+}
+
+/* tabs */
+
+.tabs {
+  margin: 0px;
+  /* border-bottom: solid 1px var(--sky-dark); */
+}
+
+.tabs a {
+  display: inline-block;
+  cursor: pointer;
+  padding: 6px 10px 3px;
+  border-bottom: solid 3px transparent;
+  margin: 0px 10px;
+}
+
+.tabs a:hover {
+  background-color: var(--purple-lighter);
+  border-bottom-color: var(--purple-light);
+}
+
+.tabs a.active {
+  border-bottom-color: var(--purple-base);
+}
+
+.shipwreck .content {
+  background-color: var(--sky-light);
+  padding: 10px;
+}
+
+/* notifications */
+
+#flash {
+  position: sticky;
+  top: 0px;
+  padding: 5px 10px;
+}
+
+.banner {
+  padding: 9px;
+  margin: 10px 0px;
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.1);
+
+  color: var(--black-base);
+  background-color: var(--sky-light);
+  border: 0px solid var(--ink-base);
+  border-top-width: 3px;
+}
+
+.success {
+  color: var(--green-text);
+  background-color: var(--green-lighter);
+  border-color: var(--green-base);
+}
+
+.info {
+  color: var(--teal-text);
+  background-color: var(--teal-lighter);
+  border-color: var(--teal-base);
+}
+
+.warning {
+  color: var(--yellow-text);
+  background-color: var(--yellow-lighter);
+  border-color: var(--yellow-base);
+}
+
+.critical {
+  color: var(--red-text);
+  background-color: var(--red-lighter);
+  border-color: var(--red-base);
+}
+
+/* forms */
+
+input[type=text],
+input[type=datetime],
+input[type=datetime-local],
+input[type=password],
+input[type=number] {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Entities */
+
+.entity-properties tr:hover {
+  background-color: var(--yellow-lighter);
+}
+
+.entity-properties td {
+  padding: 5px;
+}
+
+.entity-properties .key {
+  vertical-align: top;
+  font-weight: bold;
+  color: var(--ink-light);
+}
+
+.entity-properties .value {
+  word-break: break-word;
+}
+
+.entity-properties .value pre {
+  margin: 0;
+}
+
+/* Sub Entities */
+
+.entity-entities .head {
+  cursor: pointer;
+}
+
+.entity-entities .head:hover {
+  background-color: var(--purple-lighter);
+}
+
+.entity-entities .body {
+  display: none;
+}
+
+/* entity actions */
+
+.entity-action-href {
+  font-size: .8em;
+  color: var(--ink-lighter);
+}
+
+.form-field {
+  margin: 5px 0;
+}
+
+/* raw entity data */
+
+.entity-raw pre {
+  width: 100%;
+  overflow-x: auto;
+}

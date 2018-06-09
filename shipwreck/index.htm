@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Shipwreck</title>
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+
+  <!-- a form for submitting request to a Siren API -->
+  <div class="main-form">
+    <form method="post" onsubmit="_submit(); return false;">
+      <div class="form-fields">
+        <div class="form-field">
+          <label>HREF</label>
+          <input type="text" id="ship-href">
+        </div>
+        <div class="form-field">
+          <label>Auth Token</label>
+          <input type="text" id="ship-token">
+        </div>
+      </div>
+      <input type="submit" value="Go">
+      <span class="divider">|</span>
+      <input type="button" value="Clear Storage" onclick="_clearStorage()">
+    </form>
+  </div>
+
+  <!-- a place for status messages -->
+  <div id="flash"></div>
+
+  <!-- injection point for rendering entities -->
+  <div id="ship-output"></div>
+
+  <!-- libraries and app logic -->
+  <script type="text/javascript" src="./src/markup.js"></script>
+  <script type="text/javascript" src="./src/siren.js"></script>
+  <script type="text/javascript" src="./src/shipwreck.js"></script>
+  <script type="text/javascript" src="./src/index.js"></script>
+
+</body>
+</html>
