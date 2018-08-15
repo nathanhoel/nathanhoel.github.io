@@ -83,11 +83,11 @@ MIT
 MIT
 MIT
 
-@angular/common@5.2.11
+@angular/router@5.2.11
 MIT
 MIT
 
-@angular/router@5.2.11
+@angular/common@5.2.11
 MIT
 MIT
 
