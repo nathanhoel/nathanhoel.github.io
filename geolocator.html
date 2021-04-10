@@ -15,13 +15,17 @@
         var options = {
             enableHighAccuracy: true,
             timeout: 5000,
-            maximumWait: 10000,     // max wait time for desired accuracy
+            maximumWait: 15000,     // max wait time for desired accuracy
             maximumAge: 0,          // disable cache
             desiredAccuracy: 8,    // meters
             fallbackToIP: false,     // fallback to IP if Geolocation fails or rejected
-            addressLookup: true,    // requires Google API key if true
-            timezone: true,         // requires Google API key if true
-            map: "map-canvas",      // interactive map element id (or options object)
+            addressLookup: false,    // requires Google API key if true
+            timezone: false,         // requires Google API key if true
+            map: {
+                element: "map-canvas",      // interactive map element id (or options object)
+                mapType: "satellite",
+                zoom: 5
+            },
             staticMap: false         // get a static map image URL (boolean or options object)
         };
         geolocator.locate(options, function (err, location) {
