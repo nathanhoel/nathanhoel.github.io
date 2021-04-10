@@ -22,7 +22,7 @@
             addressLookup: true,    // requires Google API key if true
             timezone: true,         // requires Google API key if true
             map: "map-canvas",      // interactive map element id (or options object)
-            //staticMap: true         // get a static map image URL (boolean or options object)
+            staticMap: false         // get a static map image URL (boolean or options object)
         };
         geolocator.locate(options, function (err, location) {
             if (err) return console.log(err);
